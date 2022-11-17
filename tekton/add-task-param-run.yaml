@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: add-task-param-run
+spec:
+  params:
+  - name: first
+    value: 1
+  - name: second
+    value: 2
+  taskRef:
+    name: add-task-param
